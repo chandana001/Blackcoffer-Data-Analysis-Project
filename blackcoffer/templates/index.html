@@ -1,0 +1,729 @@
+<html>
+<head>
+	<title>My first chart using FusionCharts Suite XT</title>
+    <style>
+        .dropbtn {
+          background-color: #3498DB;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+	<script type="text/javascript">
+	function myfunction(){FusionCharts.ready(function (){
+			var chartObj = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'chart-container',
+    width: '550',
+    height: '350',
+    dataFormat: 'json',
+    dataSource: {
+                    "chart": {
+                        "caption": "Split of intensity by sector",
+                        "subCaption": "",
+                        "numberPrefix": "",
+                        "showPercentInTooltip": "0",
+                        "decimals": "1",
+                        "useDataPlotColorForLabels": "1",
+                        //Theme
+                        "theme": "fusion"
+                    },
+                    "data": [ {
+                        "label": "Energy",
+                        "value": "{{Energy}}"
+                    }, {
+                        "label": "Environment",
+
+                        "value": "{{Environment}}"
+                    }, {
+                        "label": "Government",
+                        "value": "{{Government}}"
+                    }, {
+                        "label": "Manufacturing",
+                        "value": "{{Manufacturing}}"
+                    }, {
+                        "label": "Retail",
+                        "value": "{{Retail}}"
+                    }, {
+                        "label": "Healthcare",
+                        "value": "{{Healthcare}}"
+                    }, {
+                        "label": "Automotive",
+                        "value": "{{Automotive}}"
+                    },{
+                        "label": "Construction",
+                        "value": "{{Construction}}"
+                    }, {
+                        "label": "Security",
+                        "value": "{{Security}}"
+                    },{
+                        "label": "Transport",
+                        "value": "{{Transport}}"
+                    }, {
+                        "label": "Water",
+                        "value": "{{Water}}"
+                    }]
+                }
+    
+    
+    
+    
+    
+}
+);
+			chartObj.render();
+		});}
+
+function myfunction2(){FusionCharts.ready(function (){
+			var chartObj = new FusionCharts({
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '550',
+    height: '350',
+    dataFormat: 'json',
+    dataSource: {
+                    "chart": {
+                        "caption": "Intensity on Articles on following year",
+                        "subCaption": "",
+                        "numberPrefix": "",
+                        "showPercentInTooltip": "0",
+                        "decimals": "1",
+                        "useDataPlotColorForLabels": "1",
+                        "xAxisName": "End year",
+            "yAxisName": "Intensities Of Article",
+                        //Theme
+                        "theme": "fusion"
+                    },
+                    "data": [ {
+                        "label": "2027",
+                        "value": "{{twentyseven}}"
+                    }, {
+                        "label": "2018",
+
+                        "value": "{{eighteen}}"
+                    }, {
+                        "label": "2025",
+                        "value": "{{twentyfive}}"
+                    }, {
+                        "label": "2040",
+                        "value": "{{fourty}}"
+                    }, {
+                        "label": "2200",
+                        "value": "{{zero}}"
+                    }, {
+                        "label": "2019",
+                        "value": "{{nineteen}}"
+                    },{
+                        "label": "2020",
+                        "value": "{{twenty}}"
+                    }, {
+                        "label": "2022",
+                        "value": "{{twentytwo}}"
+                    },{
+                        "label": "2017",
+                        "value": "{{seventeen}}"
+                    }, {
+                        "label": "2024",
+
+                        "value": "{{twentyfour}}"
+                    }, {
+                        "label": "2021",
+                        "value": "{{twentyone}}"
+                    }, {
+                        "label": "2026",
+                        "value": "{{twentysix}}"
+                    }, {
+                        "label": "2030",
+                        "value": "{{thirty}}"
+                    }, {
+                        "label": "2046",
+                        "value": "{{fourtysix}}"
+                    },{
+                        "label": "2126",
+                        "value": "{{twentysix}}"
+                    }, {
+                        "label": "2050",
+                        "value": "{{twentyfifty}}"
+                    },{
+                        "label": "2041",
+                        "value": "{{fourtyone}}"
+                    }, {
+                        "label": "2035",
+
+                        "value": "{{thirtyfive}}"
+                    }, {
+                        "label": "2016",
+                        "value": "{{sixteen}}"
+                    }, {
+                        "label": "2055",
+                        "value": "{{fiftyfive}}"
+                    }, {
+                        "label": "2028",
+                        "value": "{{twentyeight}}"
+                    }, {
+                        "label": "2036",
+                        "value": "{{thirtysix}}"
+                    },{
+                        "label": "2060",
+                        "value": "{{sixty}}"
+                    }, {
+                        "label": "2034",
+                        "value": "{{thirtyfour}}"
+                    }, {
+                        "label": "2051",
+                        "value": "{{fiftyone}}"
+                    },]
+                }
+    
+    
+    
+    
+    
+}
+);
+			chartObj.render();
+		});}             
+               
+
+
+
+
+
+
+        function myfunction2(){FusionCharts.ready(function (){
+			var chartObj = new FusionCharts({
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '550',
+    height: '350',
+    dataFormat: 'json',
+    dataSource: {
+                    "chart": {
+                        "caption": "Intensity on Articles on following year",
+                        "subCaption": "",
+                        "numberPrefix": "",
+                        "showPercentInTooltip": "0",
+                        "decimals": "1",
+                        "useDataPlotColorForLabels": "1",
+                        "xAxisName": "End year",
+            "yAxisName": "Intensities Of Article",
+                        //Theme
+                        "theme": "fusion"
+                    },
+                    "data": [ {
+                        "label": "2027",
+                        "value": "{{twentyseven}}"
+                    }, {
+                        "label": "2018",
+
+                        "value": "{{eighteen}}"
+                    }, {
+                        "label": "2025",
+                        "value": "{{twentyfive}}"
+                    }, {
+                        "label": "2040",
+                        "value": "{{fourty}}"
+                    }, {
+                        "label": "2200",
+                        "value": "{{zero}}"
+                    }, {
+                        "label": "2019",
+                        "value": "{{nineteen}}"
+                    },{
+                        "label": "2020",
+                        "value": "{{twenty}}"
+                    }, {
+                        "label": "2022",
+                        "value": "{{twentytwo}}"
+                    },{
+                        "label": "2017",
+                        "value": "{{seventeen}}"
+                    }, {
+                        "label": "2024",
+
+                        "value": "{{twentyfour}}"
+                    }, {
+                        "label": "2021",
+                        "value": "{{twentyone}}"
+                    }, {
+                        "label": "2026",
+                        "value": "{{twentysix}}"
+                    }, {
+                        "label": "2030",
+                        "value": "{{thirty}}"
+                    }, {
+                        "label": "2046",
+                        "value": "{{fourtysix}}"
+                    },{
+                        "label": "2126",
+                        "value": "{{twentysix}}"
+                    }, {
+                        "label": "2050",
+                        "value": "{{twentyfifty}}"
+                    },{
+                        "label": "2041",
+                        "value": "{{fourtyone}}"
+                    }, {
+                        "label": "2035",
+
+                        "value": "{{thirtyfive}}"
+                    }, {
+                        "label": "2016",
+                        "value": "{{sixteen}}"
+                    }, {
+                        "label": "2055",
+                        "value": "{{fiftyfive}}"
+                    }, {
+                        "label": "2028",
+                        "value": "{{twentyeight}}"
+                    }, {
+                        "label": "2036",
+                        "value": "{{thirtysix}}"
+                    },{
+                        "label": "2060",
+                        "value": "{{sixty}}"
+                    }, {
+                        "label": "2034",
+                        "value": "{{thirtyfour}}"
+                    }, {
+                        "label": "2051",
+                        "value": "{{fiftyone}}"
+                    },]
+                }
+    
+    
+    
+    
+    
+}
+);
+			chartObj.render();
+		});}             
+
+
+
+
+
+
+
+
+
+function myfunction3(){FusionCharts.ready(function (){
+			var chartObj = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'chart-container',
+    width: '550',
+    height: '350',
+    dataFormat: 'json',
+    dataSource: {
+                    "chart": {
+                        "caption": "Split of intensity by topics",
+                        "subCaption": "",
+                        "numberPrefix": "",
+                        "showPercentInTooltip": "0",
+                        "decimals": "1",
+                        "useDataPlotColorForLabels": "1",
+                        //Theme
+                        "theme": "fusion"
+                    },
+                    "data":[{'label': 'EIA', 'value': '{{EIA}}'}, {'label': 'sustainablebrandscom', 'value': '{{sustainablebrandscom}}'}, {'label': 'SBWire', 'value': '{{SBWire}}'}, 
+{'label': 'CleanTechnica', 
+'value': '{{CleanTechnica}}'}, {'label': 'TRACNews', 'value': '{{TRACNews}}'}, {'label': 'VanguardNews', 'value': '{{VanguardNews}}'},
+ {'label': 'AviMelamed', 'value': '{{AviMelamed}}'}, {'label': 'WSJ', 'value': '{{WSJ}}'}, {'label': 'Abq', 'value': '{{Abq}}'},
+  {'label': 'Reuters', 'value': '{{Reuters}}'}, {'label': 'StarTribune', 'value': '{{StarTribune}}'},
+   {'label': 'EVObsession', 'value': '{{EVObsession}}'}, {'label': 'creamermedia', 'value': '{{creamermedia}}'},
+    {'label': 'Resilience', 'value': '{{Resilience}}'}, {'label': 'FashionNetworkcom', 'value': '{{FashionNetworkcom}}'},
+     {'label': 'BloombergBusiness', 'value': '{{BloombergBusiness}}'}, {'label': 'YesBank', 'value': '{{YesBank}}'},
+      {'label': 'EGYPS', 'value': '{{EGYPS}}'}, {'label': 'marketrealist', 'value': '{{marketrealist}}'}, 
+      {'label': 'PDQFXnews', 'value': '{{PDQFXnews}}'}, {'label': 'therobotreport', 'value': '{{therobotreport}}'}, 
+      {'label': 'nextbigfuture', 'value': '{{nextbigfuture}}'}, {'label': 'WorldBank', 'value': '{{WorldBank}}'}, {'label': 'ZeroHedge', 'value': '{{ZeroHedge}}'},
+       {'label': 'Rigzone', 
+'value': '{{Rigzone}}'}, {'label': 'DOEEIA2013EnergyConference', 'value': '{{DOEEIA2013EnergyConference}}'}, {'label': 'AllAfrica', 'value': '{{AllAfrica}}'},
+ {'label': 'AMERICANCOUNCILONSCIENCEANDHEALTH', 'value': '{{AMERICANCOUNCILONSCIENCEANDHEALTH}}'}, {'label': 'TheJakartaPost', 'value': '{{TheJakartaPost}}'},
+  {'label': 'Wharton', 'value': '{{Wharton}}'}, {'label': 'AfricanArguments', 'value': '{{AfricanArguments}}'}, {'label': 'BusinessInsider', 'value': '{{BusinessInsider}}'},
+   {'label': 'ConvenienceStoreDecisions', 'value': '{{ConvenienceStoreDecisions}}'}, {'label': 'TheNextWeb', 'value': '{{TheNextWeb}}'}, {'label': 'CiiRadio', 'value': '{{CiiRadio}}'}, 
+   {'label': 'GlobalMoneyTrends', 'value': '{{GlobalMoneyTrends}}'}, {'label': 'GuardianSustainableBusiness', 'value': '{{GuardianSustainableBusiness}}'},
+    {'label': 'OklahomaMineralscom', 'value': '{{OklahomaMineralscom}}'},
+{'label': 'fourthAnnualCongressandExpoonBiofuelsandBioenergyApril27282017DubaiUAE', 'value': '{{fourthAnnualCongressandExpoonBiofuelsandBioenergyApril27282017DubaiUAE}}'}, 
+{'label': 'FXEmpire', 'value': '{{FXEmpire}}'}, {'label': 'NexusConference', 'value': '{{NexusConference}}'}, 
+{'label': 'FewsNet', 'value': '{{FewsNet}}'}, {'label': 'SputnikNews', 'value': '{{SputnikNews}}'}, 
+{'label': 'platts', 'value': '{{platts}}'}, {'label': 'CBO', 'value': '{{CBO}}'}, {'label': 'TheChirographer', 'value': '{{TheChirographer}}'}, {'label': 'THELEAGUEOFWOMENVOTERSOFTHEFAIRFAXAREA', 'value': '{{THELEAGUEOFWOMENVOTERSOFTHEFAIRFAXAREA}}'}, {'label': 'YahooFinanceCanada', 'value': '{{YahooFinanceCanada}}'}, {'label': 'GiiResearch', 'value': '{{GiiResearch}}'}, {'label': 'SouthSudanNewsAgency', 'value': '{{SouthSudanNewsAgency}}'}, {'label': 'ClimateChangeNews', 'value': '{{ClimateChangeNews}}'}, {'label': 'thestaronline', 'value': '{{thestaronline}}'}, {'label': 'khorreportspalmoil', 'value': '{{khorreportspalmoil}}'}, {'label': 'CanadianBiomass', 'value': '{{CanadianBiomass}}'}, {'label': 'InformedChoiceCharteredFinancialPlannersinCranleigh', 'value': '{{InformedChoiceCharteredFinancialPlannersinCranleigh}}'}, {'label': 'GuariniCenter', 'value': '{{GuariniCenter}}'}, {'label': 'OMFIF', 'value': '{{OMFIF}}'}, {'label': 'SouthWorld', 'value': '{{SouthWorld}}'}, {'label': 'WorldEnergyNews', 'value': '{{WorldEnergyNews}}'}, {'label': 'SlinkingTowardRetirement', 'value': '{{SlinkingTowardRetirement}}'}, {'label': 'unian', 'value': '{{unian}}'}, {'label': 'ScientificAmerican', 'value': '{{ScientificAmerican}}'}, {'label': 'Time', 'value': '{{Time}}'}, {'label': 'TransportEnvironment', 'value': '{{TransportEnvironment}}'}, {'label': 'TriplePundit', 'value': '{{TriplePundit}}'}, {'label': 'TransportEvolved', 'value': '{{TransportEvolved}}'}, {'label': 'FoxBusiness', 'value': '{{FoxBusiness}}'}, {'label': 'TheIndependent', 'value': '{{TheIndependent}}'}, {'label': 'BiofuelsDigest', 'value': '{{BiofuelsDigest}}'}, {'label': 'IRENAnewsroom', 'value': '{{IRENAnewsroom}}'}, {'label': 'NationofChange', 'value': '{{NationofChange}}'}, {'label': 'MiddleEastEye', 'value': '{{MiddleEastEye}}'}, {'label': 'IEA', 'value': '{{IEA}}'}, {'label': 'Gas2', 'value': '{{Gas2}}'}, {'label': 'PeakProsperity', 'value': '{{PeakProsperity}}'}, {'label': 'BusinessWire', 'value': '{{BusinessWire}}'}, {'label': 'RiskMap2017', 'value': '{{RiskMap2017}}'}, {'label': 'MRC', 'value': '{{MRC}}'}, {'label': 'InsuranceJournal', 'value': '{{InsuranceJournal}}'}, {'label': 'WiredUK', 'value': '{{WiredUK}}'}, {'label': 'Technavio', 'value': '{{Technavio}}'}, {'label': 'News', 'value': '{{News}}'}, {'label': 'MediaCenter', 'value': '{{MediaCenter}}'}, {'label': 'EY', 'value': '{{EY}}'}, {'label': 'TacticalInvestor', 'value': '{{TacticalInvestor}}'}, {'label': 'SeekingAlpha', 'value': '{{SeekingAlpha}}'}, {'label': 'iMFdirectTheIMFBlog', 'value': '{{iMFdirectTheIMFBlog}}'}, {'label': 'oilpricecom', 'value': '{{oilpricecom}}'}, {'label': 'EurasiaGroup', 'value': '{{EurasiaGroup}}'}, {'label': 'NYTimes', 'value': '{{NYTimes}}'}, {'label': 'Imeche', 'value': '{{Imeche}}'}, {'label': 'UniversityofChicago', 'value': '{{UniversityofChicago}}'}, {'label': 'AdamCurry', 'value': '{{AdamCurry}}'}, {'label': 'JDSupra', 'value': '{{JDSupra}}'}, {'label': 'UKGovernment', 'value': '{{UKGovernment}}'}, {'label': 'Investopedia', 'value': '{{Investopedia}}'}, {'label': 'Vox', 'value': '{{Vox}}'}, {'label': 'SouthChinaMorningPost', 'value': '{{SouthChinaMorningPost}}'}, {'label': 'OEMLubeNews', 'value': '{{OEMLubeNews}}'}, {'label': 'PRNewswire', 'value': '{{PRNewswire}}'}, {'label': 'FutureMarketInsights', 'value': '{{FutureMarketInsights}}'}, {'label': 'ManufacturingOperationsTechnologyViewpoints', 'value': '{{ManufacturingOperationsTechnologyViewpoints}}'}, {'label': 'CSIS', 'value': '{{CSIS}}'}, {'label': 'EdgeandOdds', 'value': '{{EdgeandOdds}}'}, {'label': 'maltawindscom', 'value': '{{maltawindscom}}'}, {'label': 'iamericas', 'value': '{{iamericas}}'}, {'label': 'cpzulia', 'value': '{{cpzulia}}'}, {'label': 'farms', 'value': '{{farms}}'}, {'label': 'LegalInsurrection', 'value': '{{LegalInsurrection}}'}, {'label': 'IFT', 'value': '{{IFT}}'}, {'label': 'InternationalBanker', 'value': '{{InternationalBanker}}'}, {'label': 'bankofcanada', 'value': '{{bankofcanada}}'}, {'label': 'KoenigInvestmentAdvisory', 'value': '{{KoenigInvestmentAdvisory}}'}, {'label': 'Europa', 'value': '{{Europa}}'}, {'label': 'JachinCapital', 'value': '{{JachinCapital}}'}, {'label': 'WellsFargo', 'value': '{{WellsFargo}}'}, {'label': 'ethicalconsumer', 'value': '{{ethicalconsumer}}'}, {'label': 'Citibank', 'value': '{{Citibank}}'}, {'label': 'CornellUniversity', 'value': '{{CornellUniversity}}'}, 
+{'label': 'arabellaadvisors', 'value': '{{arabellaadvisors}}'}, {'label': 'CriticalThreats', 'value': '{{CriticalThreats}}'}, {'label': 'Fitch', 'value': '{{Fitch}}'}, {'label': 'prsync', 'value': '{{prsync}}'}, {'label': 'PhysicsWorld', 'value': '{{PhysicsWorld}}'}, {'label': 'RenewableEnergyWorld', 'value': '{{RenewableEnergyWorld}}'}, {'label': 'BBCNewsTechnology', 'value': '{{BBCNewsTechnology}}'}, {'label': 'edienet', 'value': '{{edienet}}'}, {'label': 'RussiaBeyondTheHeadlines', 'value': '{{RussiaBeyondTheHeadlines}}'}, {'label': 'Politico', 'value': '{{Politico}}'}, {'label': 'TechTimes', 'value': '{{TechTimes}}'}, {'label': 'WoodMcKenzie', 'value': '{{WoodMcKenzie}}'}, {'label': 'threeDPrintingProgress', 'value': '{{threeDPrintingProgress}}'}, {'label': 'ihsmarkit', 'value': '{{ihsmarkit}}'}, {'label': 'GizmodoAustralia', 'value': '{{GizmodoAustralia}}'}, {'label': 'TheNation', 'value': '{{TheNation}}'}, {'label': 'Farmscom', 'value': '{{Farmscom}}'}, {'label': 'McKinseyCompany', 'value': '{{McKinseyCompany}}'}, {'label': 'TheGuardian', 'value': '{{TheGuardian}}'}, {'label': 'ResourcesfortheFuture', 'value': '{{ResourcesfortheFuture}}'}, {'label': 'satprnews', 'value': '{{satprnews}}'}, {'label': 'GreenBiz', 'value': '{{GreenBiz}}'}, {'label': 'CNBC', 'value': '{{CNBC}}'}, {'label': 'wwwnarendramodiin', 'value': '{{wwwnarendramodiin}}'}, {'label': 'CNNMoney', 'value': '{{CNNMoney}}'}, {'label': 'EIU', 'value': '{{EIU}}'}, {'label': 'Euromoney', 'value': '{{Euromoney}}'}, {'label': 'gasstrategies', 'value': '{{gasstrategies}}'}, {'label': 'Carscoza', 'value': '{{Carscoza}}'}, {'label': 'europeanclimate', 'value': '{{europeanclimate}}'}, {'label': 'AustralianGovernment', 'value': '{{AustralianGovernment}}'}, {'label': 'TeleTrade', 'value': '{{TeleTrade}}'}, {'label': 'BloombergNewEnergyFinance', 'value': '{{BloombergNewEnergyFinance}}'}, {'label': 'TheEconomist', 'value': '{{TheEconomist}}'}, {'label': 'PhysOrg', 'value': '{{PhysOrg}}'}, {'label': 'djsresearch', 'value': '{{djsresearch}}'}, {'label': 'nbk', 'value': '{{nbk}}'}, {'label': 'Guardian', 'value': '{{Guardian}}'}, {'label': 'cargill', 'value': '{{cargill}}'}, {'label': 'Worldly', 'value': '{{Worldly}}'}, {'label': 'UtilityDive', 'value': '{{UtilityDive}}'}, {'label': 'newscientist', 'value': '{{newscientist}}'}, {'label': 'westpandi', 'value': '{{westpandi}}'}, {'label': 'IASTOPPERS', 'value': '{{IASTOPPERS}}'}, {'label': 'THISDAYLIVE', 'value': '{{THISDAYLIVE}}'}, {'label': 'veteranstoday', 'value': '{{veteranstoday}}'}, {'label': 'thespanisheconomy', 'value': '{{thespanisheconomy}}'}, {'label': 'biologicaldiversity', 'value': '{{biologicaldiversity}}'}, {'label': 'portfolioticker', 'value': '{{portfolioticker}}'}, {'label': 'MITTechnologyReview', 'value': '{{MITTechnologyReview}}'}, {'label': 'FoodQualityNewscom', 'value': '{{FoodQualityNewscom}}'}, {'label': 'TheConversation', 'value': '{{TheConversation}}'}, {'label': 'WorldBankGroup', 'value': '{{WorldBankGroup}}'}, {'label': 'TheCable', 'value': '{{TheCable}}'}, {'label': 'FutureEarth', 'value': '{{FutureEarth}}'}, {'label': 'CarbonBrief', 'value': '{{CarbonBrief}}'}, {'label': 'Wikipedia', 'value': '{{Wikipedia}}'}, {'label': 'NWF', 'value': '{{NWF}}'}, {'label': 'USDA', 'value': '{{USDA}}'}, {'label': 'energyglobal', 'value': '{{energyglobal}}'}, {'label': 'IEAorg', 'value': '{{IEAorg}}'}, {'label': 'PwC', 'value': '{{PwC}}'}, {'label': 'metalprices', 'value': '{{metalprices}}'}, {'label': 'GEReports', 'value': '{{GEReports}}'}, {'label': 'ProjectSyndicate', 'value': '{{ProjectSyndicate}}'}, {'label': 'InteriorDesign', 'value': '{{InteriorDesign}}'}, {'label': 'idccommunity', 'value': '{{idccommunity}}'}, {'label': 'ScienceDaily', 'value': '{{ScienceDaily}}'}, {'label': 'TheMainichi', 'value': '{{TheMainichi}}'}, {'label': 'economy', 'value': '{{economy}}'}, {'label': 'Drillordrop', 'value': '{{Drillordrop}}'}, {'label': 'HuffingtonPost', 'value': '{{HuffingtonPost}}'}, {'label': 'Lawfare', 'value': '{{Lawfare}}'}, {'label': 'FutureseekLinkDigest', 'value': '{{FutureseekLinkDigest}}'}, {'label': 'EnvironmentalLeader', 'value': '{{EnvironmentalLeader}}'}, {'label': 'BusinessStandard', 'value': '{{BusinessStandard}}'}, {'label': 'ESPAS', 'value': '{{ESPAS}}'}, {'label': 'EulerHermes', 'value': '{{EulerHermes}}'}, {'label': 'amundi', 'value': '{{amundi}}'}, {'label': 'ebrd', 'value': '{{ebrd}}'}, {'label': 'DrydockMagazine', 'value': '{{DrydockMagazine}}'}, {'label': 'BorneoPostOnline', 'value': '{{BorneoPostOnline}}'}, {'label': 'FinanceMagnates', 'value': '{{FinanceMagnates}}'}, {'label': 'fridaythinking', 'value': '{{fridaythinking}}'}, {'label': 'Newsweek', 'value': '{{Newsweek}}'}, {'label': 'ECFR', 'value': '{{ECFR}}'}, {'label': 'UniversityofLatvia', 'value': '{{UniversityofLatvia}}'}, {'label': 'FutureTimeline', 'value': '{{FutureTimeline}}'}, {'label': 'allianzglobalinvestors', 'value': '{{allianzglobalinvestors}}'}, {'label': 'controleng', 'value': '{{controleng}}'}, {'label': 'inputsmonitor', 'value': '{{inputsmonitor}}'}, {'label': 'Planetsave', 'value': '{{Planetsave}}'}, {'label': 'agriworldsa', 'value': '{{agriworldsa}}'}, {'label': 'globalmoneytrends', 'value': '{{globalmoneytrends}}'}, {'label': 'Oxfam', 'value': '{{Oxfam}}'}, {'label': 'Gartner', 'value': '{{Gartner}}'}, {'label': 'clientadvisoryservices', 'value': '{{clientadvisoryservices}}'}, {'label': 'IMF', 'value': '{{IMF}}'}, {'label': 'EcoBusinesscom', 'value': '{{EcoBusinesscom}}'}, {'label': 'ChannelNewsAsia', 'value': '{{ChannelNewsAsia}}'}, {'label': 'WarontheRocks', 'value': '{{WarontheRocks}}'}, {'label': 'biomassmagazine', 'value': '{{biomassmagazine}}'}, {'label': 'ThinkProgress', 'value': '{{ThinkProgress}}'}, {'label': 'No2NuclearPower', 'value': '{{No2NuclearPower}}'}, {'label': 'ogauthority', 'value': '{{ogauthority}}'}, {'label': 'IBEF', 'value': '{{IBEF}}'}, {'label': 'ProspectsforDevelopment', 'value': '{{ProspectsforDevelopment}}'}, {'label': 'EngineeringNews', 'value': '{{EngineeringNews}}'}, {'label': 'NDTV', 'value': '{{NDTV}}'}, {'label': 'AfricanDevelopmentBank', 'value': '{{AfricanDevelopmentBank}}'}, {'label': 'Aljazeeracom', 'value': '{{Aljazeeracom}}'}, {'label': 'worldenergy', 'value': '{{worldenergy}}'}, {'label': 'cloudfront', 'value': '{{cloudfront}}'}, {'label': 'Zawya', 'value': '{{Zawya}}'}, {'label': 'FAO', 'value': '{{FAO}}'}, {'label': 'VOA', 'value': '{{VOA}}'},
+ {'label': 'HospitalityTrends', 'value': '{{HospitalityTrends}}'},
+ {'label': 'saltlakecityheadlines', 'value': '{{saltlakecityheadlines}}'},
+ {'label': 'TheTickerTape', 'value': '{{TheTickerTape}}'}, 
+ {'label': 'TheGlobeandMail', 'value': '{{TheGlobeandMail}}'}, 
+
+
+      ]  }
+}
+);
+	chartObj.render();
+		});}
+
+
+    function functionCountry(){FusionCharts.ready(function(){
+    var chartObj = new FusionCharts({
+    type: 'maps/worldwithcountries',
+    renderAt: 'chart-container1',
+    width: '600',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Intensities of Articles related to differerent countries",
+            "theme": "fusion",
+            "formatNumberScale": "0",
+            "numberSuffix": ""
+        },
+        "colorrange": {
+            "color": [{
+                "minvalue": "0",
+                "maxvalue": "100",
+                "code": "#D0DFA3",
+                "displayValue": "< 100"
+            }, {
+                "minvalue": "100",
+                "maxvalue": "500",
+                "code": "#B0BF92",
+                "displayValue": "100-500"
+            }, {
+                "minvalue": "500",
+                "maxvalue": "1000",
+                "code": "#91AF64",
+                "displayValue": "500-1000"
+            }, {
+                "minvalue": "1000",
+                "maxvalue": "5000",
+                "code": "#A9FF8D",
+                "displayValue": "> 1000"
+            }]
+        },
+        "data": [{
+            "id": "23",
+            "value": "{{usa}}"
+        }, {
+            "id": "16",
+            "value": "{{Mexico}}"
+        }, {
+            "id": "73",
+            "value": "{{Nigeria}}"
+        }, {
+            "id": "195",
+            "value": "{{Lebanon}}"
+        }, {
+            "id": "118",
+            "value": "{{Russia}}"
+        }, {
+            "id": "198",
+            "value": "{{SaudiArabia}}"
+        },{
+            "id": "40",
+            "value": "{{Angola}}"
+        }, {
+            "id": "53",
+            "value": "{{Egypt}}"
+        }, {
+            "id": "80",
+            "value": "{{SouthAfrica}}"
+        }, {
+            "id": "104",
+            "value": "{{India}}"
+        }, {
+            "id": "169",
+            "value": "{{Ukraine}}"
+        }, {
+            "id": "95",
+            "value": "{{Azerbaijan}}"
+        },{
+            "id": "101",
+            "value": "{{China}}"
+        }, {
+            "id": "29",
+            "value": "{{Colombia}}"
+        }, {
+            "id": "72",
+            "value": "{{Niger}}"
+        }, {
+            "id": "64",
+            "value": "{{Libya}}"
+        }, {
+            "id": "27",
+            "value": "{{Brazil}}"
+        }, {
+            "id": "67",
+            "value": "{{Mali}}"
+        },{
+            "id": "105",
+            "value": "{{Indonesia}}"
+        }, {
+            "id": "191",
+            "value": "{{Iraq}}"
+        }, {
+            "id": "106",
+            "value": "{{Iran}}"
+        }, {
+            "id": "204",
+            "value": "{{SouthSudan}}"
+        }, {
+            "id": "38",
+            "value": "{{Venezuela}}"
+        }, {
+            "id": "43",
+            "value": "{{BurkinaFaso}}"
+        },{
+            "id": "142",
+            "value": "{{Germany}}"
+        }, {
+            "id": "170",
+            "value": "{{UnitedKingdom}}"
+        }, {
+            "id": "194",
+            "value": "{{Kuwait}}"
+        }, {
+            "id": "05",
+            "value": "{{Canada}}"
+        }, {
+            "id": "25",
+            "value": "{{Argentina}}"
+        }, {
+            "id": "107",
+            "value": "{{Japan}}"
+        },{
+            "id": "131",
+            "value": "{{Austria}}"
+        }, {
+            "id": "166",
+            "value": "{{Spain}}"
+        }, {
+            "id": "139",
+            "value": "{{Estonia}}"
+        }, {
+            "id": "144",
+            "value": "{{Hungary}}"
+        }, {
+            "id": "175",
+            "value": "{{Australia}}"
+        }, {
+            "id": "69",
+            "value": "{{Morocco}}"
+        },{
+            "id": "143",
+            "value": "{{Greece}}"
+        }, {
+            "id": "197",
+            "value": "{{Qatar}}"
+        }, {
+            "id": "196",
+            "value": "{{Oman}}"
+        }, {
+            "id": "63",
+            "value": "{{Liberia}}"
+        }, {
+            "id": "138",
+            "value": "{{Denmark}}"
+        }, {
+            "id": "113",
+            "value": "{{Malaysia}}"
+        },{
+            "id": "193",
+            "value": "{{Jordan}}"
+        }, {
+            "id": "199",
+            "value": "{{Syria}}"
+        }, {
+            "id": "56",
+            "value": "{{Ethiopia}}"
+        }, {
+            "id": "158",
+            "value": "{{Norway}}"
+        }, {
+            "id": "58",
+            "value": "{{Ghana}}"
+        }, {
+            "id": "108",
+            "value": "{{Kazakhstan}}"
+        },{
+            "id": "116",
+            "value": "{{Pakistan}}"
+        }, {
+            "id": "57",
+            "value": "{{Gabon}}"
+        }, {
+            "id": "200",
+            "value": "{{uae}}"
+        }, {
+            "id": "39",
+            "value": "{{Algeria}}"
+        }, {
+            "id": "173",
+            "value": "{{Turkey}}"
+        }, {
+            "id": "172",
+            "value": "{{Cyprus}}"
+        }, {
+            "id": "04",
+            "value": "{{Belize}}"
+        }, {
+            "id": "159",
+            "value": "{{Poland}}"
+        }, 
+        
+            
+    ]
+    }
+}
+);
+			chartObj.render();
+		});}
+        function functionRegion(){FusionCharts.ready(function(){
+    var chartObj = new FusionCharts({
+    type: 'maps/world8withantarctica',
+    renderAt: 'chart-container1',
+    width: '600',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Intensities of Articles related to differerent regions",
+            "theme": "fusion",
+            "formatNumberScale": "0",
+            "numberSuffix": ""
+        },
+        "colorrange": {
+            "color": [{
+                "minvalue": "0",
+                "maxvalue": "100",
+                "code": "#D0DFA3",
+                "displayValue": "< 100"
+            }, {
+                "minvalue": "100",
+                "maxvalue": "500",
+                "code": "#B0BF92",
+                "displayValue": "100-500"
+            }, {
+                "minvalue": "500",
+                "maxvalue": "1000",
+                "code": "#91AF64",
+                "displayValue": "500-1000"
+            }, {
+                "minvalue": "1000",
+                "maxvalue": "5000",
+                "code": "#A9FF8D",
+                "displayValue": "> 1000"
+            }]
+        },
+        "data": [{
+            "id": "04",
+            "value": "{{NorthernAmerica}}"
+        }, {
+            "id": "06",
+            "value": "{{CentralAmerica}}"
+        }, {
+            "id": "03",
+            "value": "{{Africa}}"
+        }, {
+            "id": "01",
+            "value": "{{Asia}}"
+        }, {
+            "id": "02",
+            "value": "{{Europe}}"
+        }, {
+            "id": "05",
+            "value": "{{SouthAmerica}}"
+        },{
+            "id": "07",
+            "value": "{{Oceania}}"
+        }
+            
+    ]
+    }
+}
+);
+			chartObj.render();
+		});}
+
+
+
+
+
+function Fun() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function Fun1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        myfunction()
+        functionCountry()
+	</script>
+	</head>
+	<body>
+        <div class="dropdown">
+            <button onclick="Fun()" class="dropbtn">Intensity Chart categorised by</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#sector" onclick=myfunction()>Sector</a>
+              <a href="#topic" onclick=myfunction1()>Topic</a>
+              <a href="#endyear"onclick=myfunction2()>End Year</a>
+              <a href="#source"onclick=myfunction3()>Source</a>
+            </div>
+          </div>
+		<div id="chart-container"></div>
+        <div class="dropdown">
+            <button onclick="Fun1()" class="dropbtn">Intensity Chart categorised by</button>
+            <div id="myDropdown1" class="dropdown-content">
+              <a href="#source" onclick=functionCountry()>Country</a>
+              <a href="#region" onclick=functionRegion()>Region</a>
+              <a href="#city"onclick=myfunction2()>City</a>
+            </div>
+          </div>
+        <div id="chart-container1"></div>
+        <!-- <div id="chart-container">FusionCharts XT will load here!</div> -->
+    </body>
+</html>
